@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: This template creates an Application Load Balancer
+
+Resources:
+  AwsAcmCertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties: 
+      DomainName: aosnotes77.com
+      DomainValidationOptions: 
+        -   DomainName: aosnotes77.com
+            HostedZoneId: Z041294123G20JB6SFTO0
+      SubjectAlternativeNames: 
+        - "*.aosnotes77.com"
+      ValidationMethod: DNS
