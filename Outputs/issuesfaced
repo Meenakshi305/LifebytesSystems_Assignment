@@ -1,0 +1,6 @@
+issues faced
+
+Requested  a certificate,but still not verified the certificate so  got error as following 
+The following resource(s) failed to create: [ALBListenerSslCertificate].
+
+But done scripting needed 
